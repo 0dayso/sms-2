@@ -1,4 +1,4 @@
-﻿# README.md
+# README.md
 
 
 ---
@@ -87,15 +87,15 @@ err_code > 0 才会返回 gateway_result
     // 各网关的配置，帐号和密钥，如果是模板类型，可以按格式设置template,为方便获得完全的短信内容，网关下标名称必须对应网关类的名字
     'gateways' => [
         'alidayu' => [
-            'app_key' => '23432925',
-            'secret_key' => 'ea3f749a2b3cd8eaee1b7c9b6a961679',
+            'app_key' => '',
+            'secret_key' => '',
             'templates' => [
                 'SMS_13075120' => '您的验证码为：${code}，本次短信15分钟有效。',
             ]
         ],
         'haobo' => [
-            'account' => '10690095',
-            'password' => 'Mei2016',
+            'account' => '',
+            'password' => '',
         ],
     ],
     
@@ -106,15 +106,15 @@ err_code > 0 才会返回 gateway_result
         ],
     ],
     
-     // 配置不同产品的签名，如调用指定产品ID 1，短信内容就会带上【POCO摄影】，默认为产品1，poco摄影
+     // 配置不同产品的签名，如调用指定产品ID 1，短信内容就会带上【产品1】，默认为产品1，poco摄影
     'product' => [
         '1' => [
             'id' => 1,
-            'sign_name' => 'POCO摄影'
+            'sign_name' => '产品1'
         ],
         '2' => [
             'id' => 2,
-            'sign_name' => '游学院'
+            'sign_name' => '产品2'
         ]
     ],
      
